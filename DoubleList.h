@@ -3,8 +3,11 @@
 #include "Interfaces01.h"
 
 class DoubleList : public IDoubleList{
+private:
+	IDoubleNode * Head;
+	IDoubleNode * Tail;
 public:
-	DoubleList() {}
+	DoubleList() { Head = NULL; Tail = NULL; }
 	~DoubleList() {}
 	IDoubleNode * getHead();
 	IDoubleNode * getTail();
@@ -13,6 +16,8 @@ public:
 	void addSorted(int value);
 	void orderSort2();
 	void orderSort3();
-	void sequenceOrdersort();
+	void sequenceOrderSort();
 	void reverse();
+	//void print();
+	//bool sequence(IDoubleNode*&, IDoubleNode*&, int);
 };
