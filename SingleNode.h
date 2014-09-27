@@ -3,11 +3,12 @@
 #include "Interfaces01.h"
 
 class SingleNode : public ISingleNode{
+	//friend class SingleList;
 private:
 	int Value;
-	ISingleNode * Next;
+	ISingleNode * Next = NULL;
 public:
-	SingleNode() { Next = NULL; }
+	SingleNode() {}
 	~SingleNode() {}
 	void setValue(int value);
 	int getValue();

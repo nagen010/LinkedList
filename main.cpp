@@ -6,8 +6,7 @@ int main(int argc, char * argv[]){
   bool all_passed = true;
   long total_time = 0;
   int total_points = 0;
-  //for(int i = 0; i < grader->size(); ++i)
-	  for (int i = 6; i <7; ++i)
+  for(int i = 0; i < grader->size(); ++i)
   {
     TestCase * curr = grader->grade(i);
     std::cout << "Test Case: " << i << std::endl;

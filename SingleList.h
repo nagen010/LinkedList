@@ -6,9 +6,9 @@
 class SingleList : public ISingleList{
 
 private:
-	ISingleNode* Head;
+	ISingleNode* Head = NULL;
 public:
-	SingleList() { Head = NULL; }
+	SingleList() {}
 	~SingleList() {}
 	ISingleNode * getHead();
 	void setHead(ISingleNode * head);
@@ -17,5 +17,4 @@ public:
 	void orderSort3();
 	void sequenceOrderSort();
 	void reverse();
-	//void print();
 };
