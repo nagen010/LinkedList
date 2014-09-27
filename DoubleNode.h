@@ -3,8 +3,12 @@
 #include "Interfaces01.h"
 
 class DoubleNode : public IDoubleNode{
+private:
+	int Value;
+	IDoubleNode * Next;
+	IDoubleNode * Prev;
 public:
-	DoubleNode() {}
+	DoubleNode() { Next = NULL; Prev = NULL; }
 	~DoubleNode() {}
 	void setValue(int value);
 	int getValue();
